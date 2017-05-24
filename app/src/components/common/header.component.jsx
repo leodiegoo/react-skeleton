@@ -1,18 +1,19 @@
-import React, { Component } from 'react';  
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react'
+import LiNavLink from './linkactive.component.jsx'
 
 
 class Header extends Component {
   render() {
     return (
-      <header>
-        <nav>
-          <ul>
-            <li><Link to='/home'>home</Link></li>
-            <li><Link to='/teste'>teste</Link></li>
+      <nav className="navbar navbar-default navbar-fixed-top">
+        <div className="container">
+          <ul className="nav navbar-nav">            
+            <LiNavLink activeClassName='active' exact={true} to="/home">Home</LiNavLink>
+            <LiNavLink activeClassName='active' exact={true} to="/teste">Teste</LiNavLink>
+            <LiNavLink activeClassName='active' exact={false} to="/parameters/">Parameter /:parameter</LiNavLink>
           </ul>
-        </nav>
-      </header>
+        </div>
+      </nav>
     );
   }
 }
