@@ -1,0 +1,16 @@
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
+
+hr {
+  display: block;
+  height: 1px;
+  padding: 0;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid #ccc; }
