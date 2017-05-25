@@ -31,13 +31,3 @@ class LiNavLink extends Component {
 }
 
 export default LiNavLink;
-// const LiNavLink = ({label, to, className, activeOnlyWhenExact}) => (
-//     boolean isActive = !!(getIsActive ? getIsActive(match, location) : match)
-//     /*<Route path={to} exact={activeOnlyWhenExact} children={ ({ match }) => (
-//         <div className={match ? 'active' : ''}>
-//             <Link to={to}>{label}</Link>
-//         </div>    
-//     )}></Route>*/
-
-//     <Link to={to} className={match ? 'active': ''}>{label}</Link>
-// )
